@@ -1,5 +1,5 @@
-#ifndef UTF_ENCODER_H
-#define UTF_ENCODER_H
+#ifndef ENCODER_H
+#define ENCODER_H
 
 #include <stdint.h>
 #include <stddef.h>
@@ -21,4 +21,4 @@ size_t utf8_encode_length(uint32_t codepoint);
 // *bytes_written will contain the number of bytes written to buffer
 utf_result_t utf8_encode(uint32_t codepoint, uint8_t *buffer, size_t buffer_size, size_t *bytes_written);
 
-#endif // UTF_ENCODER_H
+#endif // ENCODER_H
